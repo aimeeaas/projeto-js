@@ -1,0 +1,103 @@
+body {
+    background-image: linear-gradient(rgb(59, 88, 93),
+            rgb(29, 40, 42));
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    /* o display ajuda na reponsabilidade */
+    display: flex;
+    /* coloca os elementos em coluna */
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#below-cover {
+    display: flex;
+    flex-direction: row;
+    /* espaço entre os elementos da div pai */
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 1em 0;
+}
+
+#button-container {
+    display: flex;
+    /* se quiser o display em linha nem precisa colocar o flex-direction row, pq já é o padrão do flex */
+    flex-direction: row;
+    /* espaço entre os elementos da div pai e uma borda em cada elemento */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    font-size: 1.5em;
+}
+
+/* um elemento pode ter um conjunto de classes */
+.button-navigate {
+    font-size: 2em;
+}
+
+.button-biggest {
+    font-size: 3em;
+}
+
+#cover {
+    width: 360px;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    /* adiciona margem em cima, baixo, direita e esquerda */
+    margin: 1em 0 3em 0;
+}
+
+#song-name {
+    font-size: 1.5em;
+    /* regular o peso da fonte, bolder deixa em negrito */
+    font-weight: bolder;
+}
+
+.light-color {
+    color: rgb(139, 153, 156);
+}
+
+#progress-bar {
+    background-color: rgb(139, 153, 156);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+#current-progress {
+    /* variável de estilo, só colocar --nome */
+    --progress: 0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-container {
+    cursor: pointer;
+}
+
+.button-active {
+    color: rgb(29, 197, 29);
+}
+
+#time-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
